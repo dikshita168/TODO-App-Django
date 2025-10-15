@@ -1,0 +1,465 @@
+/* Center the entire login section */
+.login-form-container{
+  margin: 20px auto;
+  max-width: 350px;
+  text-align: center;
+}
+
+.login-form-container h2{
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+form{
+  max-width: 700px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field and label group */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input-group label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+}
+
+/* Submit button */
+.login-submit{
+  margin-top: 35px;
+}
+.login-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Register redirect text */
+.register_redirect {
+  margin-top: 5px; /* reduced from 20px */
+  font-size: 15px;
+  color: #555;
+}
+
+.register_redirect a {
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register_redirect a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 25px 20px;
+    width: 90%;
+  }
+}
+
+
+/* register form  */
+.register-form-container{
+  margin: 20px auto;
+  max-width: 700px;
+  text-align: center;
+}
+
+/* Heading */
+.register-form-container h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+form{
+  max-width: 700px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Two-column grid for inputs */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px 40px;
+  margin-bottom: 25px;
+}
+
+/* Form groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.2);
+}
+
+/* Register button */
+.btn-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.btn-register {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-register:hover {
+  background-color: #0056b3;
+}
+
+/* Redirect text below form */
+.register_redirect {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #555;
+}
+
+.register_redirect a {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register_redirect a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Responsive (for smaller screens) */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .register-form-container {
+    padding: 30px 25px;
+  }
+}
+
+
+
+/* change-password  */
+
+.update-password-container {
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    margin-top: 50px;
+}
+
+.update-password-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.update-password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.update-password-form label {
+    font-weight: 600;
+    color: #444;
+    text-align: left;
+}
+
+.update-password-form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* profile  */
+
+.profile-box {
+  max-width: 500px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-box h2 {
+  font-size: 18px;
+  color: #444;
+  background: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.profile-box h2:hover {
+  background: #f1f1f1;
+  transform: scale(1.02);
+}
+
+.profile-box h2:first-child {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  border: none;
+  background: none;
+}
+
+/* ------------------------------------ */
+
+body {
+  background: linear-gradient(to right, #f8f9fa, #eaf4ff);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* ---------- Center the Whole Container ---------- */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0%;
+}
+
+/* ---------- Profile Box ---------- */
+.profile-box {
+  width: 100%;
+  max-width: 550px;
+  background: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.profile-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.profile-box p {
+  font-size: 16px;
+  color: #444;
+  background: #f9f9f9;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  border: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.profile-box p:hover {
+  background: #f3f3f3;
+  transform: scale(1.01);
+}
+
+.profile-box strong {
+  color: #111;
+}
+
+.register_redirect {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+.register_redirect a {
+  color: #007bff; /* nice blue link */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.register_redirect a:hover {
+  color: #0056b3; /* darker blue on hover */
+  text-decoration: underline;
+}
+
+
+.update-links {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  max-width: 450px;
+  margin-top: 10px;
+}
+
+.update-links a {
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.update-links a:hover {
+  background-color: #0056b3;
+}
+
+/* update profile  */
+
+/* Container for the form */
+.update-form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+/* Grid for form fields */
+.form-grid-update-profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns of equal width */
+    gap: 20px; /* space between columns and rows */
+}
+
+/* Form group styling */
+.form-group-update-profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-update-profile label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group-update-profile input {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button container */
+.btn-container-update-profile {
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+.btn-register-update-profile {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-register-update-profile:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive: stack fields on small screens */
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr; /* single column on mobile */
+    }
+}
