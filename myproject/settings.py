@@ -34,12 +34,13 @@ load_dotenv()
 # DEBUG = True
 
 # Allowed hosts
-SECRET_KEY = 'django-insecure-ll877z85zy3an_hnr*%!_)_klu_!gh8m^x-$1v(jvq8+=^b8b$'
+SECRET_KEY = os.getenv("SECRET_KEY", "fallback-secret-key-for-local-dev")
 
-DEBUG = True
+# Debug mode
+DEBUG = os.getenv("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = []
-
+# Allowed hosts
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1").split(',')
 
 
 # Application definition
