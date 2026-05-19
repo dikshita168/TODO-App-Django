@@ -22,7 +22,3 @@ staticfiles/
 
 # Logs
 *.log
-
-**/templates/
-
-.vscode/
