@@ -69,7 +69,7 @@ MIDDLEWARE = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://todo-app-django-afs3.onrender.com',
+    'https://todo-app-django-g5ac.onrender.com/',
 ]
 
 ROOT_URLCONF = 'myproject.urls'
