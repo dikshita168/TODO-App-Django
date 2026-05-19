@@ -40,7 +40,10 @@ SECRET_KEY = os.getenv("SECRET_KEY", "fallback-secret-key-for-local-dev")
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
 # Allowed hosts
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1").split(',')
+# ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1").split(',')
+
+ALLOWED_HOSTS = ['*']
+# print("ALLOWED_HOSTS =", ALLOWED_HOSTS)
 
 
 # Application definition
