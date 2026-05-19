@@ -68,6 +68,10 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://todo-app-django-afs3.onrender.com',
+]
+
 ROOT_URLCONF = 'myproject.urls'
 
 TEMPLATES = [
