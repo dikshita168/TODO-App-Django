@@ -36,7 +36,7 @@ def register_page(request):
         first_name = request.POST['firstname']
         last_name = request.POST['lastname']
         email = request.POST['email']
-        user_name = request.POST.get('username')
+        user_name = request.POST['username']
         password_data = request.POST['password']
 
         # Basic empty-field validation
