@@ -42,7 +42,11 @@ DEBUG = os.getenv("DEBUG", "False") == "True"
 # Allowed hosts
 # ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1").split(',')
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    "todo-app-django-mrv2.onrender.com",
+    "127.0.0.1",
+    "localhost",
+]
 # print("ALLOWED_HOSTS =", ALLOWED_HOSTS)
 
 
@@ -72,7 +76,7 @@ MIDDLEWARE = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://todo-app-django-g5ac.onrender.com/',
+    "https://todo-app-django-mrv2.onrender.com",
 ]
 
 ROOT_URLCONF = 'myproject.urls'
