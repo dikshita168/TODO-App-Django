@@ -3,7 +3,7 @@
 ## About This To-Do App
 This To-Do List application helps you organize your daily tasks efficiently. You can add new tasks, edit existing ones, mark them as completed, or delete them once done. The goal is to provide a simple yet powerful interface for managing your productivity.
 
-> 🌐 **Live Project:** [Todo Django App](https://dikshita168.pythonanywhere.com/)
+> 🌐 **Live Project:** [Todo Django App](https://django-todo-app-hsf0.onrender.com/)
 
 ---
 
