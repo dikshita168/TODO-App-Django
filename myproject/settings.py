@@ -42,13 +42,14 @@ DEBUG = os.getenv("DEBUG", "False") == "True"
 # Allowed hosts
 # ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1").split(',')
 
-ALLOWED_HOSTS = [
-    "todo-app-django-mrv2.onrender.com",
-    "127.0.0.1",
-    "localhost",
-]
+# ALLOWED_HOSTS = [
+#     "todo-app-django-mrv2.onrender.com",
+#     "127.0.0.1",
+#     "localhost",
+# ]
 # print("ALLOWED_HOSTS =", ALLOWED_HOSTS)
 
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -153,7 +154,8 @@ STATICFILES_DIRS = [
     BASE_DIR/'static'
 ]
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
